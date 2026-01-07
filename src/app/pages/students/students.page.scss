@@ -1,0 +1,16 @@
+ion-menu-button::part(icon) {
+  color: black;
+}
+
+ion-back-button::part(icon) {
+  color: black;
+}
+
+/* Center only the student image in the card */
+ion-card img {
+  display: block;
+  margin: 0 auto;    // Centers the image horizontally
+  max-width: 90%;    // Adjust size as needed
+  height: auto;      // Maintain aspect ratio
+  border-radius: 8px; // Optional: rounded corners
+}

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <!-- Page Title -->
+    <ion-title style="color: black;">Alumni | SNSU</ion-title>
+
+    <!-- Menu Icon -->
+    <ion-buttons slot="start">
+      <ion-menu-button class="white-menu-button"></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Back Icon -->
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="home" class="white-back-button"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Header Image -->
+  <ion-img src="/assets/Images/header.jpg" alt="SNSU Header"></ion-img>
+</ion-header>
+
+<ion-content>
+  <!-- Alumni Links -->
+  <ion-list>
+    <ion-item routerLink="/alumni/association">
+      <ion-icon slot="start" [icon]="icons.association" color="primary"></ion-icon>
+      <ion-label>Alumni Association</ion-label>
+    </ion-item>
+
+    <ion-item routerLink="/alumni/events">
+      <ion-icon slot="start" [icon]="icons.events" color="primary"></ion-icon>
+      <ion-label>Events & Activities</ion-label>
+    </ion-item>
+
+    <ion-item routerLink="/alumni/directory">
+      <ion-icon slot="start" [icon]="icons.directory" color="primary"></ion-icon>
+      <ion-label>Alumni Directory</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- About SNSU Card -->  
+  <ion-card>
+    <img alt="SNSU" src="/assets/Images/alumni.jpg" class="centered-img" />
+
+    <ion-card-header>
+      <ion-card-title>ABOUT SNSU</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      The Surigao del Norte State University is a public university in the Philippines.
+      It is mandated to provide advanced education, higher technological, professional
+      instruction, and training in various fields including agriculture, engineering,
+      forestry, industrial technology, law, and health-related programs.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
